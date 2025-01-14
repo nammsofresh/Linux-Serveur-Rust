@@ -36,7 +36,7 @@ SOURCE_DIR="/home/rustserver"
 
 # Destination de sauvegarde
 DEST_USER="sauvegarde"
-DEST_SERVER="157.173.122.151" (on a pas de serveur distant)
+DEST_SERVER="157.173.122.151" 
 DEST_PATH="/chemin/de/sauvegarde"
 
 # Commande rsync
