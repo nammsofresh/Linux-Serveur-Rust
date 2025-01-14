@@ -7,7 +7,7 @@ Felix Conchy
 ## Explication du CHS
 
 ````
-Le projet CHS est un projet par deux étudiants Titouan et Louis dans le but de mettre en place un serveur Rust entierement et manuellement.
+Le projet CHS est un projet par trois étudiants Titouan, Felix et Louis dans le but de mettre en place un serveur Rust entierement et manuellement.
 Afin de mener à bien ce projet et d'établir des objectifs à la hauteur de nos ambitions, nous avons décidés d'héberger ce projet sur des serveurs en lignes que nous louerons. (ynov virement svp)
 ````
 
