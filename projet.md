@@ -151,7 +151,7 @@ maxretry = 5
 ```
 rustserver@vmi2316883:~$ sudo systemctl restart fail2ban
 ``` 
-## 4. Configuration du pare-feu avec UFW
+## 4. Configuration du pare-feu avec UFW et d'un anti cheat
 
 ### -> Installer et configurer ufw (Uncomplicated Firewall) pour protéger le serveur.
 
@@ -166,6 +166,49 @@ rustserver@vmi2316883:~$ sudo ufw default allow outgoing
 ```
 rustserver@vmi2316883:~$ sudo ufw allow 28015/tcp
 rustserver@vmi2316883:~$ sudo ufw allow 28015/udp
+```
+
+### -> Installation de 
+
+### *1. Installer uMod/Oxide
+
+```
+
+Télécharger la dernière version d'uMod pour Rust :
+wget https://umod.org/download/latest
+
+Extrayez et remplacez les fichiers dans le dossier du serveur :
+
+unzip latest.zip -d ~/rust_server
+
+Redémarrez votre serveur Rust pour activer uMod :
+
+cd ~/rust_server
+
+./RustDedicated -batchmode -nographics +server.port 28015 ...
+```
+
+### *2. Ajouter un plugin anticheat
+
+```
+uMod propose plusieurs plugins d'anticheat pour Rust. Voici comment en installer un :
+
+Télécharger le plugin "RustAdminAntiCheat" :
+
+Placez-le dans le dossier oxide/plugins/ sur votre serveur.
+
+mv oxide.cs ~/rust_server/oxide/plugins/
+
+Chargez le plugin : Connectez-vous à la console RCON ou utilisez un terminal dans le jeu :
+
+oxide.reload RustAdminAntiCheat
+```
+
+### 3*. Configurer et personnaliser l’anticheat
+
+```
+nano ~/rust_server/oxide/config/RustAdminAntiCheat.json
+
 ```
 
 ## 5. Installation de SteamCMD et du serveur Rust
