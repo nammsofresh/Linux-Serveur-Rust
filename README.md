@@ -2,6 +2,7 @@
 
 Louis Chavaroche
 Titouan Venant
+Felix Conchy
 
 ## Explication du CHS
 
